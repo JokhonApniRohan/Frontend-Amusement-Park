@@ -1,7 +1,5 @@
 import "./Rides_style.css"
-
 import React from 'react';
-import './Rides_style.css';
 
 function Ridebox(props) {
   const { imageSrc, name, description, price, availableTickets } = props;

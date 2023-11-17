@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './BuyTickets.css';
+import Header from '../../components/Header';
 
 
 const BuyTickets = () => {
@@ -17,6 +18,8 @@ const BuyTickets = () => {
  ];
 
  return (
+  <>
+  <Header />
     <div className="buy-tickets">
       <h1 className="text-3xl font-medium">Buy Tickets</h1>
       <div className="packages">
@@ -29,6 +32,7 @@ const BuyTickets = () => {
         ))}
       </div>
     </div>
+    </>
  );
 };
 

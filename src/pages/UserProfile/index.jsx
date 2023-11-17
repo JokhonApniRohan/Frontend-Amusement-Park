@@ -1,6 +1,11 @@
+import Header from "../../components/Header";
+
 const UserProfile = () => {
     return (
-        <>User Profile</>
+        <>
+        <Header />
+        User Profile
+        </>
     )
 }
 

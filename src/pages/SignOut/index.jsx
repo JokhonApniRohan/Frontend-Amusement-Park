@@ -1,6 +1,10 @@
+import Header from "../../components/Header";
+
 const SignOut = () => {
     return (
-        <>SignOut</>
+        <>
+        SignOut
+        </>
     )
 }
 

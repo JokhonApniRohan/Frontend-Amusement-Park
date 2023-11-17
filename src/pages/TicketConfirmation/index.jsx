@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from 'react-router-dom';
 import './TicketConfirmation.css';
+import Header from "../../components/Header";
 
 export const TicketConfirmation = () => {
     const [userName, setUserName] = useState('');
@@ -9,21 +10,34 @@ export const TicketConfirmation = () => {
     const [transactionID, setTransactionID] = useState('');
     const {id} = useParams();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(userName);
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+
+        const jsonData = await fetch('http://localhost:4000/buy-ticket', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                userid: document.cookie.split('=')[1],
+                packageName: packageName,
+                amountPaid: paidAmount,
+                transactionId: transactionID
+            })
+        })
+
+        const data = await jsonData.json()
+        console.log(data)
     }
 
     return (
+        <>
+        <Header />
         <div className="auth-form-container">
             <h1 className="text-3xl font-medium">Ticket Confirmation</h1>
             <p className="text-xl font-medium">You have chosen Package {id}.</p>
 
-            <form className="ticket-confirmation-form" onSubmit={handleSubmit}>
-                
-                <label htmlFor="userName">User Name</label>
-                <input value={userName} onChange={(e) => setUserName(e.target.value)}type="name" placeholder="your user name" />
-                
+            <form className="ticket-confirmation-form" onSubmit={handleSubmit}> 
                 <label htmlFor="packageName">Package Name</label>
                 <input value={packageName} onChange={(e) => setPackageName(e.target.value)}type="text" placeholder="package name" />
 
@@ -37,6 +51,7 @@ export const TicketConfirmation = () => {
             
             </form>
         </div>
+        </>
     );
 }
 

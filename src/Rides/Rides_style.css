@@ -58,7 +58,7 @@ body {
     flex-direction: column;
   }
 
-#header {
+#headerRides {
     height: 50px;
     width: 100%;
     background-color: white;
@@ -71,7 +71,7 @@ body {
     top: 0;
 }
 
-#header h1 {
+#headerRides h1 {
     margin: 0;
     padding: 0;
 }

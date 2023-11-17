@@ -18,7 +18,7 @@ export default function RidesPage() {
 
     return (
         <div id="container">
-            <div id="header">
+            <div id="headerRides">
                 <h1>Rides</h1>
             </div>
 

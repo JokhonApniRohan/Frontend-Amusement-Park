@@ -8,23 +8,21 @@ import Home from "./pages/Home/index.jsx";
 import SignOut from "./pages/SignOut/index.jsx";
 import TicketConfirmation from "./pages/TicketConfirmation/index.jsx";
 import UserProfile from "./pages/UserProfile/index.jsx";
-import Header from "./components/Header.jsx";
-
 import RidesPage from "./Rides/RidesPage.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
     <BrowserRouter>
         <React.StrictMode>
-            <Header/>
             <Routes>
               <Route path="/login" element={<App />} />
               <Route path="/admin" element={<AppAdmin />}/>
               <Route path="/" element={<Home />} />
-                <Route path="/buy-tickets" element={<BuyTickets />} />
-                <Route path="/buy-tickets/:id" element={<TicketConfirmation />} />
-                <Route path="/user-profile" element={<UserProfile />} />
-                <Route path="/sign-out" element={<SignOut />} />
+              <Route path="/buy-tickets" element={<BuyTickets />} />
+              <Route path="/buy-tickets/:id" element={<TicketConfirmation />} />
+              <Route path="/user-profile" element={<UserProfile />} />
+              <Route path="/sign-out" element={<SignOut />} />
               <Route path="/rides" element={<RidesPage />} />
             </Routes>
         </React.StrictMode>
