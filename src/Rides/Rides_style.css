@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .ride-box {
+    display: flex;
+    margin: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    width: 96%;
+    height: auto;
+  }
+  
+  .image-container {
+    flex: 0 0 160px;
+    height: 160px;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .ride-details {
+    flex: 1;
+  }
+  
+  .name {
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .description {
+    margin-top: 5px;
+    font-size: 1.6em;
+    color: #555;
+  }
+  
+  .price,
+  .available-tickets {
+    margin-top: 8px;
+    font-size: 1.6em;
+    color: #777;
+  }
+  
+  #container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+#headerRides {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #c2c2c2;
+    position: sticky;
+    top: 0;
+}
+
+#headerRides h1 {
+    margin: 0;
+    padding: 0;
+}
