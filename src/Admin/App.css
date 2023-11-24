@@ -5,12 +5,16 @@
 .App {
   text-align: center;
   display: flex;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 600px;
+  width: 100vw;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(246, 237, 237);
   background-image: url(./images/parkk.jpg);
   background-size: cover;
+  background-position: center;
+  /* filter: blur(2px); */
 }
 
 

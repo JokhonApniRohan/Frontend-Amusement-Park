@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  
 }
 
 .App {
@@ -17,7 +18,10 @@ body {
   background-image: url(./images/background.gif);
   background-size: cover;
 }
-
+#Headerbox{
+  border: 4px solid skyblue;
+border-radius: 5px;
+}
 
 .auth-form-container, .login-form, .register-form {
   display: flex;
