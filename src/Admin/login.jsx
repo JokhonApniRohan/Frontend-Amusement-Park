@@ -24,7 +24,7 @@ export const Login = (props) => {
         console.log(data)
         localStorage.setItem('admin-token', data.token)
 
-        window.location.href = 'http://localhost:3000/'
+        window.location.href = 'http://localhost:3000/admin-home'
     }
     
     return (

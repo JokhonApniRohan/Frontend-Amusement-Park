@@ -7,7 +7,7 @@ export const About = () => {
                     <div className="">
                         <h2 className="text-2xl font-medium">About Us</h2>
                         <p className="text-lg">
-                        blah blah blah blah blah blah blah blah
+                        "Imagination Amusement Park invites you to embark on a whimsical journey where reality blends with fantasy, promising an enchanting experience for all ages."
                         </p>
                     </div>
                 </div>
