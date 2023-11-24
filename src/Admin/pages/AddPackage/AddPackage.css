@@ -1,0 +1,38 @@
+.add-package-container, .add-package-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+    
+@media screen and (min-width: 600px) {
+.add-package-form {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 2rem;
+    background-color: rgb(199, 141, 199);
+    }
+}
+
+label {
+text-align: left;
+padding: 0.25rem 0;
+}
+
+input {
+margin: 0.5rem 0;
+padding: 1rem;
+border: none;
+border-radius: 10px;
+}
+
+.add-package-button {
+    background-color: #372959;
+    margin-right: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}

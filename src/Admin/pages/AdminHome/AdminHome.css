@@ -1,0 +1,38 @@
+.admin-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   
+.sections {
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+text-align: center;
+padding: 5rem;
+border: 1px solid white;
+border-radius: 10px;
+margin: 1rem;
+background-color: #d4a4d5;
+height: 30vh;
+width: 50vh;
+}
+   
+.buttons {
+display: flex;
+justify-content: center;
+text-align: center;
+margin: 20px;
+}
+
+.add-button {
+background-color: #372959;
+margin-right: 10px;
+color: white;
+}
+
+.delete-button {
+background-color: #372959;
+color: white;
+}
