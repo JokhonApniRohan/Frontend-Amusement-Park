@@ -7,7 +7,7 @@ export const Login = (props) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         
-        let data = await fetch('http://localhost:4003/login', {
+        let data = await fetch('http://localhost:4000/login', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import "./AddPackage.css";
 
 export const AddPackage = () => {
-    const [packageID, setPackageID] = useState('');
+    const [packageId, setPackageID] = useState('');
     const [packageName, setPackageName] = useState('');
     const [packageDetails, setPackageDetails] = useState('');
     const [availableTickets, setAvailableTickets] = useState('');
@@ -11,7 +11,36 @@ export const AddPackage = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-    }
+
+        const packageData = {
+            packageId,
+            packageName,
+            packageDetails,
+            availableTickets,
+          };
+
+        try {
+            const response = await fetch('http://localhost:4000/admin-add-package', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(packageData),
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Error: ${response.statusText}`);
+            }
+            setPackageID('');
+            setPackageName('');
+            setPackageDetails('');
+            setAvailableTickets('');
+            
+        }   catch (error) {
+            console.error('Error:', error);
+        }
+
+    };
 
     return (
         <>
@@ -21,7 +50,7 @@ export const AddPackage = () => {
 
             <form className="add-package-form" onSubmit={handleSubmit}> 
                 <label htmlFor="packageID">Package ID</label>
-                <input value={packageID} onChange={(e) => setPackageID(e.target.value)} type="text" />
+                <input value={packageId} onChange={(e) => setPackageID(e.target.value)} type="text" />
 
                 <label htmlFor="packageName">Package Name</label>
                 <input value={packageName} onChange={(e) => setPackageName(e.target.value)} type="text" />
