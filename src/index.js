@@ -25,7 +25,7 @@ root.render(
               <Route path="/add-package" element={<AddPackage />} />
               <Route path="/" element={<Home />} />
               <Route path="/buy-tickets" element={<BuyTickets />} />
-              <Route path="/buy-tickets/:id" element={<TicketConfirmation />} />
+              <Route path="/buy-tickets/:pname" element={<TicketConfirmation />} />
               <Route path="/user-profile" element={<UserProfile />} />
               <Route path="/sign-out" element={<SignOut />} />
               <Route path="/rides" element={<RidesPage />} />

@@ -8,7 +8,7 @@ export const TicketConfirmation = () => {
     const [packageName, setPackageName] = useState('');
     const [paidAmount, setPaidAmount] = useState('');
     const [transactionID, setTransactionID] = useState('');
-    const {id} = useParams();
+    const {pname} = useParams();
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -35,11 +35,11 @@ export const TicketConfirmation = () => {
         <Header />
         <div className="auth-form-container">
             <h1 className="text-3xl font-medium">Ticket Confirmation</h1>
-            <p className="text-xl font-medium">You have chosen Package {id}.</p>
+            {/* <p className="text-xl font-medium">You have chosen Package {id}.</p> */}
 
             <form className="ticket-confirmation-form" onSubmit={handleSubmit}> 
                 <label htmlFor="packageName">Package Name</label>
-                <input value={packageName} onChange={(e) => setPackageName(e.target.value)}type="text" placeholder="package name" />
+                <input value={pname} />
 
                 <label htmlFor="paidAmount">Paid Amount</label>
                 <input value={paidAmount} onChange={(e) => setPaidAmount(e.target.value)}type="text" placeholder="amount"/>
