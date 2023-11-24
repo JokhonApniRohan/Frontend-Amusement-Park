@@ -10,7 +10,10 @@ const AdminHome = () => {
                 <div className="sections">
                     <h1 className="text-2xl font-medium">Packages</h1>
                     <div className="buttons">
-                        <button className="add-button"><Link to="/add-package">Add</Link></button>
+                        <button className="add-button">
+                            <Link to="/add-package">Add</Link>
+                        </button>
+
                         <button className="delete-button">Delete</button>
                     </div>
                 </div>
@@ -18,7 +21,10 @@ const AdminHome = () => {
                 <div className="sections">
                     <h1 className="text-2xl font-medium">Rides</h1>
                     <div className="buttons">
-                        <button className="add-button">Add</button>
+                        <button className="add-button">
+                            <Link to="/add-ride">Add</Link>
+                        </button>
+
                         <button className="delete-button">Delete</button>
                     </div>
                 </div>

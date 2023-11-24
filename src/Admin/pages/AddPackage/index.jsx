@@ -17,6 +17,7 @@ export const AddPackage = () => {
             packageName,
             packageDetails,
             availableTickets,
+            adminToken: localStorage.getItem('admin-token')
           };
 
         try {

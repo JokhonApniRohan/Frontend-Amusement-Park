@@ -9,9 +9,9 @@ import SignOut from "./pages/SignOut/index.jsx";
 import TicketConfirmation from "./pages/TicketConfirmation/index.jsx";
 import UserProfile from "./pages/UserProfile/index.jsx";
 import RidesPage from "./Rides/RidesPage.jsx";
-
 import AdminHome from "./Admin/pages/AdminHome/index.jsx";
 import AddPackage from "./Admin/pages/AddPackage/index.jsx";
+import { AddRide } from "./Admin/pages/AddRides/index.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -29,6 +29,7 @@ root.render(
               <Route path="/user-profile" element={<UserProfile />} />
               <Route path="/sign-out" element={<SignOut />} />
               <Route path="/rides" element={<RidesPage />} />
+              <Route path="/add-ride" element={<AddRide />} />
             </Routes>
         </React.StrictMode>
     </BrowserRouter>

@@ -13,14 +13,14 @@ export const TicketConfirmation = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        const jsonData = await fetch('http://localhost:4000/buy-ticket', {
+        const jsonData = await fetch('http://localhost:4000/buy-package', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
                 userid: document.cookie.split('=')[1],
-                packageName: packageName,
+                packageName: pname,
                 amountPaid: paidAmount,
                 transactionId: transactionID
             })

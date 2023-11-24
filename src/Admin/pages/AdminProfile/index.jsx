@@ -45,9 +45,9 @@ useEffect(() => {
     })
     const data = await userData.json()
     setId(data[0].UserID)
-setEmail(data[0].Email)
-setUsername(data[0].Name)
-setNumber(data[0].Number)
+    setEmail(data[0].Email)
+    setUsername(data[0].Name)
+    setNumber(data[0].Number)
     
     console.log(data)
   }

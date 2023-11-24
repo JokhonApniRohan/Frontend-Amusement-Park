@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './BuyTickets.css';
 import Header from '../../components/Header';
 
-
 const BuyTickets = () => {
   const [packages, setPackages] = useState([]);
   const [packageName, setPackageName] = useState(0)
