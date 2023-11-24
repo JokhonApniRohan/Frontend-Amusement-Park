@@ -13,7 +13,7 @@ export const TicketConfirmation = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        const jsonData = await fetch('http://localhost:4000/buy-ticket', {
+        const jsonData = await fetch('http://localhost:4000/buy-package', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
