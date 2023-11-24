@@ -12,7 +12,7 @@ export const Register = (props) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         
-        const data = await fetch('http://localhost:4000/signup', {
+        const data = await fetch('http://localhost:4003/signup', {
             method: 'POST',
             body: JSON.stringify({
                 name: name,

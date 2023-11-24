@@ -13,7 +13,7 @@ export const TicketConfirmation = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        const jsonData = await fetch('http://localhost:4000/buy-ticket', {
+        const jsonData = await fetch('http://localhost:4003/buy-ticket', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -45,7 +45,7 @@ export const TicketConfirmation = () => {
                 <input value={paidAmount} onChange={(e) => setPaidAmount(e.target.value)}type="text" placeholder="amount"/>
 
                 <label htmlFor="transactionID">Transaction ID</label>
-                <input value={transactionID} onChange={(e) => setTransactionID(e.target.value)}type="text" placeholder="your userID"/>
+                <input value={transactionID} onChange={(e) => setTransactionID(e.target.value)}type="text" placeholder="Transaction ID"/>
 
                 <button type="submit">Confirm</button>
             

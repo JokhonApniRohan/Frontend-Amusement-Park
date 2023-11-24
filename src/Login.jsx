@@ -7,7 +7,7 @@ export const Login = (props) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         
-        let data = await fetch('http://localhost:4000/login', {
+        let data = await fetch('http://localhost:4003/login', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -21,6 +21,8 @@ export const Login = (props) => {
 
         data = await data.json()
         document.cookie = `token=${data.token}`
+
+        window.location.href = 'http://localhost:3000/'
     }
     
     return (
