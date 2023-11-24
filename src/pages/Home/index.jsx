@@ -1,7 +1,14 @@
+import { redirect } from "react-router-dom";
 import { About } from "../../components/About"
 import Header from "../../components/Header";
+import React from 'react'
 
 const Home = () => {
+    React.useEffect(() => {
+        const token = document.cookie.split('=')[1]
+        if(!token || token == '0') window.location.href = 'http://localhost:3000/login'
+    }, [])
+
     return (
         <>
         <Header />

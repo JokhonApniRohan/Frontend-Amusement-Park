@@ -20,9 +20,12 @@ export const Header = () => {
                 <div className="flex items-center justify-center space-x-4">
                     <Link to="/buy-tickets">Buy Tickets</Link>
                     <Link to="/user-profile">User Profile</Link>
-                    <Link to="/sign-out">Sign Out</Link>
-                </div>
 
+                    <div style={{ cursor: 'pointer' }} onClick={() => {
+                        document.cookie = 'token=0'
+                        window.location.href = 'http://localhost:3000/login'
+                    }}>Sign Out</div>
+                </div>
             </div>
         </nav>
     )
