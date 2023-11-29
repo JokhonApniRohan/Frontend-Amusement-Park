@@ -5,9 +5,26 @@ export const Login = (props) => {
     const [userID, setID] = useState('');
     const [pass, setPass] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(userID);
+        
+        let data = await fetch('http://localhost:4000/admin-login', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                credentials: "include"
+            },
+            body: JSON.stringify({
+                userid: userID,
+                password: pass
+            })
+        })
+
+        data = await data.json()
+        console.log(data)
+        localStorage.setItem('admin-token', data.token)
+
+        window.location.href = 'http://localhost:3000/admin-home'
     }
     
     return (
@@ -24,7 +41,6 @@ export const Login = (props) => {
                 <button type="submit">Log In</button>
             
             </form>
-            <button className="link-btn" onClick={() => props.onFormSwitch('register')}>Don't have an account? Register here.</button>
         </div>
     )
 }

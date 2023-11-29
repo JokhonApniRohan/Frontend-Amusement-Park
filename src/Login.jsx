@@ -21,6 +21,8 @@ export const Login = (props) => {
 
         data = await data.json()
         document.cookie = `token=${data.token}`
+
+        window.location.href = 'http://localhost:3000/'
     }
     
     return (
