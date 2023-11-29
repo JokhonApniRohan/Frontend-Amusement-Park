@@ -7,7 +7,7 @@ export default function RidesPage() {
 
     useEffect(() => {
         async function getData() {
-            let data = await fetch('http://localhost:3000/Rides')
+            let data = await fetch('http://localhost:4000/Rides')
             data = await data.json()
 
             console.log(data)

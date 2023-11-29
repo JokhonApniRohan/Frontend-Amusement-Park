@@ -1,6 +1,7 @@
 import { About } from "../../components/About"
 import Header from "../../components/Header";
 import "./Home.css"
+import React from "react"
 const Home = () => {
     React.useEffect(() => {
         const token = document.cookie.split('=')[1]
