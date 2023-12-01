@@ -1,4 +1,4 @@
-import imagination from "../images/parkk.jpg"
+import imagination from "../images/imagination.png"
 import { Link } from "react-router-dom"
 
 export const Header = () => {
@@ -12,8 +12,8 @@ export const Header = () => {
                     </Link>
                 </div>
 
-                <div className="flex items-center justify-center space-x-4">
-                    <Link to="/admin-profile">Admin Profile</Link>
+                <div className="flex items-center justify-center space-x-5">
+                    <Link to="/balance-sheet">Balance Sheet</Link>
                     <Link to="/admin-sign-out">Sign Out</Link>
                 </div>
 

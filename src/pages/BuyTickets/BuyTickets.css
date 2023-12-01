@@ -5,42 +5,29 @@
    }
    
    .buy-tickets .packages {
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: row;
     width: 100%;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
    }
    
-   .buy-tickets .package {
+   .buy-tickets .packages .package {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 20px;
+    text-align: center;
+    width: 300px;
    }
    
    .buy-tickets .package button {
     margin: 10px;
     padding: 10px;
     cursor: pointer;
-   }
-   
-   .buy-tickets .package button:nth-child(1) {
-    background-color: blue;
-    color: white;
-    border: none;
-   }
-   
-   .buy-tickets .package button:nth-child(1):hover {
-    background-color: darkblue;
-   }
-   
-   .buy-tickets .package button:nth-child(2) {
-    background-color: lightgray;
-    color: black;
-    border: none;
-   }
-   
-   .buy-tickets .package button:nth-child(2):hover {
-    background-color: darkgray;
    }
 
    button {
@@ -55,10 +42,15 @@
 
   @media screen and (min-width: 600px) {
     .package {
-      padding: 5rem;
+      padding: 2rem;
       border: 1px solid white;
       border-radius: 10px;
       margin: 0.5rem;
       background-color:#b34466;
     }
+  }
+
+  .msg {
+    background-color: rgb(214, 163, 171);
+    margin-top: 10px;
   }

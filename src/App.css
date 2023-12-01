@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -16,6 +16,7 @@ body {
   color: white;
   background-image: url(./images/background.gif);
   background-size: cover;
+  
 }
 
 
@@ -60,4 +61,4 @@ button {
   background: none;
   color: white;
   text-decoration: underline;
-}
+} */

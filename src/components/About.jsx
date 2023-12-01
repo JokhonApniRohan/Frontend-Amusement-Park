@@ -7,7 +7,9 @@ export const About = () => {
                     <div className="">
                         <h2 className="text-2xl font-medium">About Us</h2>
                         <p className="text-lg">
-                        blah blah blah blah blah blah blah blah
+                        Step into the Imagination Amusement Park, where reality bends and dreams take flight,
+                        offering a thrilling journey through the boundless landscapes of creative wonder.
+                        It's a realm where the extraordinary is born from the depths of your own imagination.
                         </p>
                     </div>
                 </div>

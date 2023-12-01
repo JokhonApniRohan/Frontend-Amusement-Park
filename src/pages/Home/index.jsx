@@ -1,7 +1,8 @@
 import { About } from "../../components/About"
-import Header from "../../components/SecondaryHeader"
+import Header from "../../components/Header"
 import React from "react"
 import "./Home.css"
+import "./Home2.css"
 
 const Home = () => {
     React.useEffect(() => {
@@ -12,7 +13,7 @@ const Home = () => {
         <>
         <Header />
         
-        <div className="App">
+        <div className="AppUserHome">
       <header className="App-header">
 
       </header>

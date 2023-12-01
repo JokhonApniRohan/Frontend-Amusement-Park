@@ -1,11 +1,17 @@
 .admin-home {
-    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
    }
    
 .sections {
+    
 display: flex;
 justify-content: space-around;
 flex-direction: column;
@@ -32,7 +38,18 @@ margin-right: 10px;
 color: white;
 }
 
-.delete-button {
+.view-button {
 background-color: #372959;
 color: white;
 }
+
+.delete-button {
+    background-color: #372959;
+    color: white;
+    }
+
+.edit-button {
+    background-color: #372959;
+    color: white;
+    margin-right: 10px;
+    }
