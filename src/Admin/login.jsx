@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css"
+import "./AdminLogin.css"
 
 export const Login = (props) => {
     const [userID, setID] = useState('');
@@ -28,9 +28,9 @@ export const Login = (props) => {
     }
     
     return (
-        <div className="auth-form-container">
+        <div className="admin-auth-form-container">
             <h2>Admin Login</h2>
-            <form className="login-form" onSubmit={handleSubmit}>
+            <form className="admin-login-form" onSubmit={handleSubmit}>
                 
                 <label htmlFor="userID">userID</label>
                 <input value={userID} onChange={(e) => setID(e.target.value)}type="text" placeholder="your userID" id="email" name="email" />

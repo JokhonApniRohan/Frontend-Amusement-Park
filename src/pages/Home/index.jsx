@@ -12,7 +12,7 @@ const Home = () => {
         <>
         <Header />
         
-        <div className="App">
+        <div className="backgroundGif">
       <header className="App-header">
 
       </header>

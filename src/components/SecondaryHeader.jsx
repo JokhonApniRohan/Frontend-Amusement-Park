@@ -17,14 +17,17 @@ export const Header = () => {
                 </div>
 
                 <div className="flex items-center justify-center space-x-4">
-                    <Link to="/" className="text-xl">Home</Link>
+                <Link to="/" className="text-xl">Home</Link>
                     <Link to="/buy-tickets" className="Headerbox">Buy Tickets</Link>
                     <Link to="/Rides"className="Headerbox">Rides</Link>
                     <Link to="/user-profile"className="Headerbox">User Profile</Link>
-                    <Link to="/sign-out"className="Headerbox">Sign Out</Link>
+                    <Link to="/add-review" className="Headerbox">Review</Link>
+                    <div style={{ cursor: "pointer" }} onClick={() => {
+                        document.cookie = 'token=0'
+                        window.location.href = 'http://localhost:3000/login'
+                    }} className="Headerbox">Sign Out</div>
                     
                     <p>&nbsp;&nbsp;</p>
-                    
                 </div>
 
             </div>

@@ -7,7 +7,7 @@ export const About = () => {
                     <div className="">
                         <h2 className="text-2xl font-medium">About Us</h2>
                         <p className="text-lg">
-                        blah blah blah blah blah blah blah blah
+                        Welcome to Imagination, where the extraordinary becomes reality! Immerse yourself in a world of thrilling rides, enchanting gardens, and vibrant entertainment. Our commitment to safety ensures worry-free fun for all ages. At Imagination, create lasting memories as you experience the magic of limitless possibilities. Welcome to the adventure!
                         </p>
                     </div>
                 </div>

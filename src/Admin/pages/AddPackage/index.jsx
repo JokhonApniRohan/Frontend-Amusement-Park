@@ -6,6 +6,7 @@ export const AddPackage = () => {
     const [packageId, setPackageID] = useState('');
     const [packageName, setPackageName] = useState('');
     const [packageDetails, setPackageDetails] = useState('');
+    const [price, setPrice] = useState('');
     const [availableTickets, setAvailableTickets] = useState('');
 
 
@@ -16,6 +17,7 @@ export const AddPackage = () => {
             packageId,
             packageName,
             packageDetails,
+            price,
             availableTickets,
             adminToken: localStorage.getItem('admin-token')
           };
@@ -31,14 +33,18 @@ export const AddPackage = () => {
             
             if (!response.ok) {
                 throw new Error(`Error: ${response.statusText}`);
+            } else {
+                window.location.href = "/view-packages";
             }
+
             setPackageID('');
             setPackageName('');
             setPackageDetails('');
+            setPrice('');
             setAvailableTickets('');
             
         }   catch (error) {
-            console.error('Error:', error);
+                console.error('Error:', error);
         }
 
     };
@@ -51,16 +57,19 @@ export const AddPackage = () => {
 
             <form className="add-package-form" onSubmit={handleSubmit}> 
                 <label htmlFor="packageID">Package ID</label>
-                <input value={packageId} onChange={(e) => setPackageID(e.target.value)} type="text" />
+                <input value={packageId} onChange={(e) => setPackageID(e.target.value)} type="text" id="packageID" name="packageID" />
 
                 <label htmlFor="packageName">Package Name</label>
-                <input value={packageName} onChange={(e) => setPackageName(e.target.value)} type="text" />
+                <input value={packageName} onChange={(e) => setPackageName(e.target.value)} type="text" id="packageName" name="packageName" />
 
                 <label htmlFor="packageDetails">Package Details</label>
-                <input value={packageDetails} onChange={(e) => setPackageDetails(e.target.value)} type="text" />
+                <input value={packageDetails} onChange={(e) => setPackageDetails(e.target.value)} type="text" id="packageDetails" name="packageDetails" />
+
+                <label htmlFor="price">Price</label>
+                <input value={price} onChange={(e) => setPrice(e.target.value)} type="text" id="price" name="price" />
 
                 <label htmlFor="availableTickets">Available Tickets</label>
-                <input value={availableTickets} onChange={(e) => setAvailableTickets(e.target.value)} type="text" />
+                <input value={availableTickets} onChange={(e) => setAvailableTickets(e.target.value)} type="text" id="availableTickets" name="availableTickets" />
 
                 <button className="add-package-button" type="submit">Add</button>
             

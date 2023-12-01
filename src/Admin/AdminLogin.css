@@ -1,25 +1,26 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.App {
+.AppLogin {
   text-align: center;
   display: flex;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
   color: rgb(0, 0, 0);
+  background-image: url(./images/parkk.jpg);
   background-size: cover;
 }
 
 
-.auth-form-container, .login-form, .register-form {
+.admin-auth-form-container, .admin-login-form {
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (min-width: 600px) {
-  .auth-form-container {
+  .admin-auth-form-container {
     padding: 5rem;
     border: 1px solid white;
     border-radius: 10px;
@@ -54,4 +55,4 @@ button {
   background: none;
   color: white;
   text-decoration: underline;
-} */
+}
