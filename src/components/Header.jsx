@@ -21,6 +21,7 @@ export const Header = () => {
                     <Link to="/buy-tickets" className="Headerbox">Buy Tickets</Link>
                     <Link to="/Rides"className="Headerbox">Rides</Link>
                     <Link to="/user-profile"className="Headerbox">User Profile</Link>
+                    <Link to="/add-review"className="Headerbox">Review</Link>
                     <Link to="/sign-out"className="Headerbox">Sign Out</Link>
                     
                     <p>&nbsp;&nbsp;&nbsp;</p>

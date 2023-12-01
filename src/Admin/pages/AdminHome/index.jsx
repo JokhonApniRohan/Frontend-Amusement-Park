@@ -25,7 +25,7 @@ const AdminHome = () => {
                             <Link to="/add-ride">Add</Link>
                         </button>
 
-                        <button className="delete-button">Delete</button>
+                        <button className="delete-button"><Link to="/delete-ride">Delete</Link></button>
                     </div>
                 </div>
 

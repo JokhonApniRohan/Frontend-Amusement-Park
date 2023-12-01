@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './BuyTickets.css';
-import Header from '../../components/Header';
+// import Header from '../../components/Header';
+import Header from "../../components/Header";
 
 const BuyTickets = () => {
   const [packages, setPackages] = useState([]);

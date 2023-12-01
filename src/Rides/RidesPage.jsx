@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Ridebox from "./Rides";
-import Header from "../Admin/components/Header";
+import Ridebox from "./Rides"; 
+import Header from "../Admin/components/Header"; 
 
 export default function RidesPage() {
     const [rides, setRides] = useState(false)

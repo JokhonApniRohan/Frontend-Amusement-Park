@@ -12,7 +12,8 @@ import RidesPage from "./Rides/RidesPage.jsx";
 import AdminHome from "./Admin/pages/AdminHome/index.jsx";
 import AddPackage from "./Admin/pages/AddPackage/index.jsx";
 import { AddRide } from "./Admin/pages/AddRides/index.jsx";
-
+import DeleteRide from "./Admin/pages/DeleteRide/index.jsx";
+import AddReview from "./pages/SubmitReview/index.jsx";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -30,6 +31,8 @@ root.render(
               <Route path="/sign-out" element={<SignOut />} />
               <Route path="/rides" element={<RidesPage />} />
               <Route path="/add-ride" element={<AddRide />} />
+              <Route path="/delete-ride" element={<DeleteRide />} />
+              <Route path="/add-review" element={<AddReview />} />
             </Routes>
         </React.StrictMode>
     </BrowserRouter>

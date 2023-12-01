@@ -41,7 +41,7 @@ useEffect(() => {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ jwttoken: document.cookie.split('=')[1] })        
+        body: JSON.stringify({ jwtToken: document.cookie.split('=')[1] })        
     })
     const data = await userData.json()
     setId(data[0].UserID)

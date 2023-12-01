@@ -1,7 +1,7 @@
 import imagination from "../images/imagination.png"
 import { Link } from "react-router-dom"
 
-export const Header = () => {
+const Header = () => {
     return (
         <nav id="header" className="bg-opacity-0 text-dark blue absolute z-10 flex justify-end inset-x-0 flex justify-between">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
