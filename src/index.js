@@ -21,6 +21,8 @@ import DeleteRide from "./Admin/pages/DeleteRide/index.jsx"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+// whaaaaa
+
 root.render(
     <BrowserRouter>
         <React.StrictMode>
