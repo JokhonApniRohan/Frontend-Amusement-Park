@@ -10,7 +10,7 @@ body {
     margin: 20px;
     padding: 40px;
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: rgba(149, 59, 151, 0.409);
     border: 1px solid #e0e0e0;
     width: 96%;
     height: auto;
