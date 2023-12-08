@@ -1,11 +1,11 @@
 import React,{useState,useEffect} from 'react';
-
+import Header from '../../components/Header';
 const wrapperStyle = {
   height: '100vh', // 100% of the viewport height
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: 'skyblue', // Set to blue
+  backgroundColor: 'pink', // Set to blue
 };
 
 const containerStyle = {
@@ -56,6 +56,8 @@ setNumber(data[0].Number)
 }, [])
 
   return (
+    <>
+    <Header></Header>
     <div style={wrapperStyle}>
       <div style={containerStyle}>
         <p style={textStyles}>ID: {id}</p>
@@ -64,6 +66,7 @@ setNumber(data[0].Number)
         <p style={textStyles}>Email: {email}</p>
       </div>
     </div>
+    </>
   );
 };
 

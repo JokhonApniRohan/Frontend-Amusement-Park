@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import ReviewList from '../WatchReview'
-
+import Header from '../../components/Header';
 const AddReview = () => {
   const [review, setReview] = useState("")
   const [message, setMessage] = useState("")
@@ -25,6 +25,8 @@ const AddReview = () => {
   }
 
   return (
+    <>
+    <Header/>
     <div className="add-package-container">
        <h1>Add a Review</h1>
        <input type="sumbit" value={review} onChange={(e) => setReview(e.target.value)} />
@@ -33,6 +35,7 @@ const AddReview = () => {
 
        <ReviewList/>
     </div>
+    </>
   )
 }
 export default AddReview

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Ridebox from "./Rides";
-import Header from "../Admin/components/Header";
+import Header from "../components/Header";
 
 export default function RidesPage() {
     const [rides, setRides] = useState(false)
@@ -18,14 +18,18 @@ export default function RidesPage() {
     }, [])
 
     return (
+        <>
+        <Header/>
         <div id="container">
             <div id="headerRides">
-                <h1>Rides</h1>
+                {/* <h1>Rides</h1> */}
             </div>
 
             {rides === false ? "Loading"
              : rides.map((elm, i) => <Ridebox key={i} name={elm.Name} imageSrc={elm.image} description={elm.Description} price={elm.Price}/>)
             }
+        
         </div>
+        </>
     );
 }
